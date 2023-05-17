@@ -1,0 +1,631 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* #menu_open {
+    width: 3em;
+    height: 3em;
+    margin-top: 1em;
+    margin-left: -10em;
+    position: absolute;
+} */
+
+body {
+    overflow-x: hidden;
+}
+.landing_verualcampus {
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    color: slateblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: large;
+}
+
+#intro_landing_page {
+    position: absolute;
+    scroll-behavior: smooth;
+    width: 190em;
+    max-width: 400em;
+    margin-top: 2em;
+    background-color: slategray;
+    height: 15em;
+}
+
+/* intro words styling */
+.intro_words {
+    margin-top: 4em;
+    justify-items: stretch;
+    font-weight: lighter;
+    letter-spacing: 0.09em;
+    text-indent: 0.5em;
+    font-size: x-large;
+    margin-left: 0.3em;
+    animation-name: texts;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes texts {
+    1%{margin-left: 1.5em;}
+    2%{margin-left: -1.5em;}
+}
+
+.wel_bck_img {
+    margin-left: 43em;
+    margin-top: -17em;
+    position: absolute;
+    transform: scale(0.3);
+}
+
+.shop_link, .plans_link{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    /* background-color: slateblue;
+    border: 0.5em solid slategray;
+    border-radius: 3em;
+    height: 5em; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.shop_link:hover {
+    transform: scale(0.9);
+    opacity: 0.9;
+    /* animation: link_anim 1s ease-out 0.1s 1; */
+}
+
+/* plans stylng */
+#intro_pricing_page {
+    position: absolute;
+    margin-top: 30em;
+    /* height: 180em; */
+}
+
+.plans_text p {
+    font-size: 0.2em;
+    margin-top: -2.4em;
+    font-weight: bolder;
+    color: chocolate;
+}
+
+.plans_link {
+    margin-top: -5em;
+}
+
+.plans_link a i, #about_verualcampus p {
+    animation: flow_around 2s ease-in 0 1;
+}
+
+.plans_link:hover {
+    transform: rotate(0.2deg);
+}
+
+@keyframes flow_around {
+    1%{margin-left: -5em};
+}
+
+.plans_summ1, .plans_summ2, .plans_summ3 {
+    height: 25em;
+    width: 20em;
+    margin-left: 5em;
+    margin-top: 4em;
+    border-radius: 0.2em 0.5em 0.2em 0.5em;
+    border: 0.1em solid #424242;
+    box-shadow: 0.5px 0.5px 2px 0.2px #424242;
+}
+
+.plans_summ1_no {
+    height: 4em;
+    width: 19.7em;
+    background-color: slateblue;
+    border-radius: 0.2em 0.5em 0.2em 0.5em;;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.plans_summ1_no span {
+    margin-top: 0.4em;
+}
+
+.plans_summ1_txt {
+    text-align: center;
+}
+
+.img_4mobile {
+    display: none;
+}
+
+.plans_summ2 div {
+    background-color: #31362bc7;
+}
+
+.plans_summ3 {
+    border: #8bc34a;
+}
+
+.plans_summ3 div {
+    background-color: #8bc34a;
+    margin-left: 0.2em;
+}
+
+
+/* plan explained stylings*/
+.planOne, .planTwo, .planThree {
+    position: absolute;
+    scroll-behavior: smooth;
+    /* width: 190em;
+    max-width: 400em; */
+    /* background-color: rgba(105, 90, 205, 0.26);
+    height: 15em; */
+}
+
+.planOne h2, .planTwo h2, .planThree h2 {
+    margin-left: 3em;
+}
+
+.ad_abst {
+    margin-left: 10em;
+    position: absolute;
+    font-size: 1.2em;
+    margin-top: -1em;
+    width: 11.5em;
+    color: slateblue;
+}
+
+.grey-bg {
+    width: 25em;
+    height: 40em;
+    background-color: #757575;
+    color: white;
+    margin-left: 8em;
+    margin-top: 4em;
+    border-radius: 1.5em;
+}
+
+.grey-bg p {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: justify;
+    transform: scale(0.92);
+    margin-top: 2em;
+    position: absolute;
+}
+
+.grey-bg h5 {
+    color: rgba(0, 0, 0, 0.932);
+    text-align: center;
+    margin-top: 27em;
+    box-shadow: 0.5px 0.5px 2px 0.2px #424242;
+    height: 1.3em;
+}
+
+.grey-bg h5:hover {
+    box-shadow: 0.5px 0.5px 6px 0.2px #424242;
+    transform: scale(1.001);
+    color: white;
+    font-weight: bolder;
+}
+
+.info_small {
+    font-size: 0.6em;
+}
+
+/** the small about us **/
+#about_verualcampus {
+    display: flex;
+    position: absolute;
+    text-align: justify;
+    /* width: 107em;
+    max-width: 120em; */
+    color: #42424288;
+}
+
+#about_verualcampus p b {
+    font-style: italic;
+    font-size: 0.98em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.cpyrgt {
+    color: rgba(255, 255, 255, 0.753);
+    text-indent: 1em;
+
+}
+
+
+
+/* small devices */
+@media screen and (min-width: 0px) and (max-width: 599px) { 
+    .shop_link, .plans_link {
+        margin-left: 0;
+    }
+
+    /* .wel_bck_img {
+        display: none;
+    } */
+
+    .plans_link {
+        margin-left: 10em;
+    }
+
+    .plans_summ1, .plans_summ2, .plans_summ3{
+        justify-content: space-between;
+        align-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planOne {
+        margin-top: 5em;
+    }
+
+    .planTwo {
+        margin-top: 60em;
+    }
+
+    .planThree {
+        margin-top: 115em;
+    }
+
+    .planTwo .grey-bg {
+        background-color: slategray;
+    }
+
+    .planTwo .ad_txt {
+        color: slategrey;
+    }
+
+    .planTwo .ad_abst, .planThree .ad_abst {
+        color: #424242;
+    }
+
+    .planThree .ad_abst {
+        width: 11.3em;
+        margin-left: 7em;
+    }
+
+    .ad_abst {
+        width: 11.3em;
+        margin-left: 7em;
+    }
+
+    .planThree .ad_txt {
+        color: #8bc34a;
+    }
+
+    .planThree .grey-bg {
+        background-color: #8bc34a;
+    }
+
+    .grey-bg {
+        margin-left: 6em;
+        background-color: rgba(105, 90, 205, 0.692);
+    }
+    
+    .grey-bg h5 {
+        margin-top: 28em;
+    }
+
+    .info_small {
+        margin-top: -2.3em;
+        position: absolute;
+    }
+
+    /** the small about us **/
+    #about_verualcampus {
+        margin-top: 317em;
+    }
+
+    
+    .about_txt {
+        width: 26.9em;
+    }
+
+    #navigation {
+        position: absolute;
+        margin-top: 393em;
+        height: 15em;
+    }
+
+    .cpyrgt {
+        color: rgba(255, 255, 255, 0.753);
+        text-indent: 1em;
+        font-size: 0.3em;
+    }
+    
+}
+
+/* @media screen and (min-width: 512px) and (max-width: 600px){
+    .about_txt {
+        width: 29em;
+    }
+} */
+
+
+/* small and half-medium */
+@media screen and (max-width: 630px) {
+    .img_4mobile {
+        display: flex;
+        transform: scale(0.4);
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        margin-top: -3em;
+        margin-left: -1em;
+    }
+}
+
+/* small and half-medium */
+@media screen and (min-width: 335px) and (max-width: 660px) {
+    .img_4mobile {
+        display: flex;
+        transform: scale(0.2);
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        margin-top: -3em;
+        margin-left: -1em;
+    }
+}
+
+/* medium devices */
+@media screen and (min-width: 600px) and (max-width: 1099px) { 
+    .shop_link, .plans_link {
+        margin-left: 0;
+    }
+
+    /* .wel_bck_img {
+        display: none;
+    } */
+
+    .plans_link {
+        margin-left: 22em;
+    }
+
+    .plans_summ1, .plans_summ2, .plans_summ3{
+        justify-content: space-between;
+        align-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 17em;
+        position: absolute;
+    }
+
+    .plans_summ2 {
+        margin-top: 34em;
+    }
+
+    .plans_summ3 {
+        margin-top: 65em;
+    }
+
+    .planOne, .planTwo, .planThree {
+        position: absolute;
+        scroll-behavior: smooth;
+        /* width: 190em;
+        max-width: 400em; */
+        margin-top: 98em;
+        /* background-color: rgba(105, 90, 205, 0.26);
+        height: 15em; */
+    }
+
+    .planTwo {
+        margin-top: 158em;
+    }
+
+    .planThree {
+        margin-top: 218em;
+    }
+
+    .planTwo .grey-bg {
+        background-color: slategray;
+    }
+
+    .planThree .grey-bg {
+        background-color: #8bc34a;
+    }
+
+    .planTwo .ad_txt {
+        color: slategrey;
+    }
+
+    .planThree .ad_txt {
+        color: #8bc34a;
+    }
+
+    .planTwo .ad_abst, .planThree .ad_abst{
+        color: #424242;
+    }
+
+    .planThree .ad_abst {
+        width: 11.3em;
+        margin-left: 7em;
+    }
+
+    .ad_abst {
+        width: 11.3em;
+        margin-left: 7em;
+    }
+
+    #intro_pricing_page {
+        height: 160em;
+    }
+
+    .grey-bg {
+        background-color: rgba(105, 90, 205, 0.692);
+        width: 30em;
+    }
+
+        /** the small about us **/
+    #about_verualcampus {
+        margin-top: 330em;
+    }
+
+    .about_txt {
+        width: 55em;
+    }
+
+    #navigation {
+        position: absolute;
+        margin-top: 390em;
+        height: 15em;
+    }
+
+    .cpyrgt {
+        color: rgba(255, 255, 255, 0.753);
+        text-indent: 1em;
+        font-size: 0.3em;
+    }
+    
+}
+
+/* large devices */
+@media screen and (min-width: 1100px) { 
+    .shop_link, .plans_link {
+        width: 25em;
+        margin-left: 25em;
+    }
+
+    #intro_landing_page:hover {
+        background-color: slateblue;
+    }
+ 
+    #intro_pricing_page {
+        height: 280em;
+    }
+
+    .plans_text {
+        font-size: 25em;
+    }
+
+    .plans_link {
+        margin-left: 45em;
+    }
+
+    .plans_summ1, .plans_summ2, .plans_summ3 {
+        margin-left: 10em;
+    }
+
+    .plans_summ1:hover, .plans_summ2:hover {
+        box-shadow: 0.5px 0.5px 4px 1px slategray;
+    }
+
+    .plans_summ2, .plans_summ3 {
+        margin-left: 45em;
+        position: absolute;
+        margin-top: -25em;
+    }
+
+    .plans_summ3 {
+        margin-left: 80em;
+    }
+
+    .plans_summ1_txt {
+        margin-top: 1.5em;
+    }
+
+    .planOne, .planTwo, .planThree {
+        position: absolute;
+        /* width: 190em;
+        max-width: 400em; */
+        margin-top: 18em;
+        /* background-color: rgba(105, 90, 205, 0.26);
+        height: 15em; */
+    }
+
+    .planTwo {
+        margin-top: 80em;
+    }
+
+    .planThree {
+        margin-top: 142em;
+    }
+
+    .planTwo .grey-bg {
+        background-color: slateblue;
+    }
+
+    .planThree .grey-bg {
+        background-color: #424242;
+    }
+
+    .planTwo .grey-bg:hover {
+        background-color: rgba(112, 128, 144, 0.781);
+    }
+
+    .planThree .grey-bg:hover {
+        background-color: #8bc34a;
+    }
+
+    .planTwo .ad_txt {
+        color: slateblue;
+    }
+
+    .planThree .ad_txt {
+        color: #8bc34a;
+    }
+
+    .planTwo .ad_abst, .planThree .ad_abst {
+        color: #424242;
+    }
+
+    .grey-bg {
+        margin-left: 8em;
+        margin-top: 4em;
+        width: 40em;
+    }
+
+    .grey-bg:hover {
+        background-color: rgba(105, 90, 205, 0.692);
+        color: white;
+    }
+
+    .grey-bg h5 {
+        color: slateblue;
+    }
+
+    /** the short about us **/
+    #about_verualcampus {
+        position: absolute;
+        margin-top: 282em;
+        /* background-color: #bba7a75b;
+        color: #424242; */
+    }
+
+    #navigation {
+        position: absolute;
+        margin-top: 333em;
+        height: 20em;
+    }
+
+    .cpyrgt {
+        color: rgba(255, 255, 255, 0.753);
+        text-indent: 1em;
+
+    }
+
+    .about_txt {
+        width: 80em;
+    }
+    
+}

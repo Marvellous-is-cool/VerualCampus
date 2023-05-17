@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Veru on campus! </title>
+        <link rel = "stylesheet" href = "landing_verualcampus.css">
+        <script src=materialize\js\materialize.min.js"></script>
+        <script src="jquery-plugins/jquery-3.6.0.js"></script>
+        <script src="jquery-plugins/landing_verualcampus.js"></script>
+        <link rel="stylesheet" href="materialize\css\materialize.min.css">
+        <link rel = "stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel = "preconnect" href="fonts_pack.css" crossorigin>
+        <link rel = "stylesheet" href="fonts_pack.css">
+        <style href = "fonts_pack.css">
+            .intro_words, .planOne h2, .grey-bg p, .planTwo h2, .planThree h2, .cpyrgt {
+              font-family: 'Advent Pro', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+
+          .planOne h2, .planTwo h2, .planThree h2 {
+              font-weight: bolder;
+          }
+
+          .plans_text, .grey-bg h5{
+            font-family: 'Black Ops One', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 5em
+          }
+
+          .catch_phrase {
+              font-size: 2.3em;
+              font-family: 'Alef';
+              text-align: center;
+              margin-top: 5em;
+
+          }
+
+          .catch_phrase b::first-letter {
+              font-weight: bolder;
+              color: rgba(112, 128, 144, 0.705);
+          }
+
+          .grey-bg h5 {
+              font-size: 1.2em;
+          }
+
+          .plans_text p, .plans_summ1_txt, .ad_abst, .grey-bg h5:hover {
+              font-family: 'Alef', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+
+          .plans_summ1_no span {
+            font-family: 'Advent Pro', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+
+          #about_verualcampus p {
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              transform: scale(0.96);
+              font-size: 1.3em
+          }
+
+          @media screen and (min-width: 1100px) { 
+            .plans_text {
+                font-size: 7em;
+                margin-left: 2em;
+                width: 10em;
+            }  
+        }
+      </style>
+
+     <script>
+     document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, options);
+    });
+
+    window.onload = function() {
+        window.scrollTo(0, 0);
+    }
+     </script> 
+        
+    </head>
+    <body>
+        <div class = "container landing_verualcampus">
+            <h3 id = "name">Verualcampus.com</h3>
+        </div>
+
+         <div class = "container" id = "intro_landing_page">
+                <h2 class = "flow-text intro_words white-text"> Welcome back on campus, needs anything? <br> &nbsp &nbsp &nbsp Let's get you every basic needs! <i class = "material-icons blue-text lighten-2">verified</i> </h2> <img class="hide-on-small-and-med wel_bck_img" src = "veraimages/welcome.png" alt = "welcome_back" />
+         <!-- links to shopping.verualcampus.com -->
+            <div class = "waves-effect btn center-align blue shop_link" style="border-radius: 3em;" type = "button" name = "weblink" role="link" contenteditable="false"><a href = "shopping.verualcampus.com" style = "text-decoration: none; color: white;"> Start shopping </a></div>
+        </div>
+
+        <div class = "container" id = "intro_pricing_page">
+            <h3 class = "flow-text center-align plans_text">You can even buy and earn <p> Lots of plans on our end! </p></h3>
+
+        <!-- links to the plans below-->
+            <div class = "btn-small center-align plans_link grey darken-3" style="border-radius: 3em;" type = "button" name = "shortlink" role="link" contenteditable="false"><a class="flow-text" href = "#Buy_even_at_discounts" style = "text-decoration: none; color: white;"><i class = "material-icons right arrow">arrow_forward</i> See Plans </a></div>
+        <!--plans summary-->
+            <div class = "plans_summ1">
+                <div class = "plans_summ1_no"><span class = "flow-text center-align">Veru Buyer</span></div>
+                <img class = "img_4mobile" src = "veraimages/shopping_cart_4mobiles.jpg" alt = "shopping_with_us" />
+                <p class="flow-text plans_summ1_txt">By just being our buyer, you get to Buy, even at <b>discounts</b> <br> <br> <i class="flow-text  yellow darken-4 white-text">from 1% - 10% discounts offers</i> </p>
+            </div>
+
+            <div class = "plans_summ2">
+                <div class = "plans_summ1_no"><span class = "flow-text center-align">Veru Seller</span></div>
+                <img class = "img_4mobile" src = "veraimages/sellers_png_4mobile.png" alt = "shopping_with_us" />
+                <p class="flow-text plans_summ1_txt">Become a seller, by posting your <b>products/services here </b> <br> <br> <i class="flow-text  yellow darken-4 white-text">For free and get paid at your comfort!!</i> </p>
+            </div>
+
+            <div class = "plans_summ3">
+                <div class = "plans_summ1_no"><span class = "flow-text center-align">Veru Affiliate</span></div>
+                <img class = "img_4mobile" src = "veraimages/affiliate_png_4mobile.png" alt = "shopping_with_us" />
+                <p class="flow-text plans_summ1_txt">Be our affiliate, only by promoting and engaging </b> <br> <br> <i class="flow-text  yellow darken-4 white-text">and earn commisions within weeks</i> </p>
+            </div>
+
+            <!--menu for large screens-->
+
+
+
+        <!-- Plan One -->
+            <div class = "planOne" id = "Buy_even_at_discounts">
+                <h2 class="flow-text ad_txt">Buy, Even at discounts</h2>
+                <i class="ad_abst"> - <b>1% - 10% offers</b></i>
+                <div class = "grey-bg">
+                    <p class="flow-text plan_txt">We know that you'll need some things for your campus preparation, and even while you're there, you    will need many things even <b>assesories</b> are important. So, don't worry, we have compiled marketers who have all that you need, just a click and everything you need is at your disposal. <br> <br>
+                        <span class = "split_text">Moreso, we've got you discounts on items varying from <b>1% to 10% discount offers </b>to help you save your money.</span> <br> <br>
+                        <span>Truly, We just started, but let's call this a tip of an iceberg, we are building up to get you more! Why don't you then taste the tip :)</p> <br> <br>
+                    </p>
+                    <h5><a href = "shopping.verualcampus.com" style = "text-decoration: none; color: black;"> Start shopping now </a></h5>
+                </div>
+            </div>
+
+         <!-- Plan Two -->
+            <div class = "planTwo" id = "Become_a_seller">
+                <h2 class="flow-text ad_txt">Become a seller</h2>
+                <i class="ad_abst"> - <b>for free!</b></i>
+                <div class = "grey-bg">
+                    <p class="flow-text plan_txt">On campus, everyone is thriving to make money in order to survive. So, you've got several items you are selling, and to get so many customers, you always stress yourself posting on social media, calling for customers<br> <br>
+                        <span class = "split_text">Well, <b>Veru</b> is now on campus and so, you just need to upload your items on our site, <b>for free</b> and then relax!</span> <br> <br>
+                        <span>We will help you advertise, and sell. You will just sit, studying in school convinently while your items are sold, and your money loads into your account automatically. What do you think :)!</span></p> <br> <br>
+                    </p>
+                    <h5><a href = "sellers.verualcampus.com" style = "text-decoration: none; color: black;"> Start selling now </a></h5>
+                </div>
+            </div>
+
+         <!-- Plan Three -->
+         <div class = "planThree" id = "Be_our_affiliate">
+            <h2 class="flow-text ad_txt">Be Our Affiliate</h2>
+            <i class="ad_abst"> - <b>and earn commisions</b></i>
+            <div class = "grey-bg">
+                <p class="flow-text plan_txt">We've got you a plan, right for your very interest. On <b>Veru</b>, you can earn commisions that will infact sustain you throughout your study in campus. What to do? <i>advertise products</i>, <i>get them sold</i>, and <i>earn amounts</i> on each of the tasks<br> <br>
+                    <span class = "split_text">Infact, you have stories readily made for you to read and earn. Refer members and earn 50% commisions of their signup amount. Got all these sustaining you throughout your whole days.</span> <br> <br>
+                    <span>With just a registration of <b><i>N1,999/yr </i></b> you're all in. Get on the train!</span> <br> <br>
+                    <span class = "info_small">*Your first payment serves as the registration fee for the whole year, while renewal applies at request, every year.</span>
+                </p> <br> <br>
+                </p>
+                <h5><a href = "affilliates.verualcampus.com" style = "text-decoration: none; color: black;"> Join us now </a></h5>
+            </div>
+        </div>
+        </div>
+
+        <!-- little about us -->
+        <div class="container" id = "about_verualcampus">
+            <div class = "about_little_us col s2 m4 l6" id = "about_little us">
+                <p class ="flow-text about_txt">We are <b>Veru on campus</b>, just launched and ready to serve you in getting you every of your needs easily and convinently. There are fixed prices for goods and services and in this wise, you don't have to negotiate with the buyer. As a buyer, you just need to pick your desired, pay, and we will get them available for you, anywhere you are, within the campus, infact, for free! We have dedicated deliveres who are at the service of delivering to you products across several campuses <br>
+                <b>Verual campus</b> provides wide range plans such that you can buy, as well as sell your products on the site with absolutely easy steps, infact, you won't need to deliver them yourselves. And as an affiliate, you have varies of opportunities!<br>
+                <b>Verual campus</b> is a new launched company, although we are new, but we are determined to step up like other popular trading companies online. So yeah, with our commitments fulfiled, we are ready to be trustable and won't be part of those that folds up at the end of the day! Nah, we ain't in a <b>'pozy scheme'</b> business. <br> <br>
+                You can as well, tell your friends and everyone you know, about us so they can enjoy from the same flexibility! And trust us, we still have more to offer. Verual campus is currently situated in Nigeria, reaching Universities, Colleges and Polytechnics to bring about comfort basic amenities to the students in the campuses in a flexible, accessible way with many benefits along!
+                </p>
+
+                    <h3 class="catch_phrase"><b style="color: slateblue;">Buy</b> . <b style="color: slategray;">Sell</b> . <b style="color:#8bc34a">Earn</b></h3>
+            </div>
+        </div>
+
+        <nav class="nav-wrapper black lighten-2" id = "navigation">
+            <h3 class = "left flow-text cpyrgt">&copy; 2022 All Rights Reserved. veru on campus and verualcampus are both trademarks of <b>verual Inc.</b></h3>
+        </nav>
+
+    </body>
+</html>
