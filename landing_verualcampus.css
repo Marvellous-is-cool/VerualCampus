@@ -12,6 +12,7 @@ html {
 
 body {
     overflow-x: hidden;
+    background: white;
 }
 .landing_verualcampus {
     justify-content: space-between;
